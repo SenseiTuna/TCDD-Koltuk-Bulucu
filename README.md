@@ -92,4 +92,4 @@ python tools/package_extension.py
 
 Betik manifest referanslarını doğrular ve yalnız üç çalışma dosyasını ZIP'e alır. `dist/` altında sürümlü ZIP ile `SHA256SUMS.txt` oluşur. Paket içindeki `manifest.json` doğrudan kök dizindedir. Kaynak kodu ve belgeler GitHub'daki repoda bulunur.
 
-Sürüm geçmişi için [değişiklik notlarına](CHANGELOG.md), katkı için [katkı rehberine](CONTRIBUTING.md) bakabilirsin. Yeni sürüm yayımlarken önce `manifest.json` içindeki sürümü ve değişiklik notlarını güncelle, ardından paketi oluşturup aynı sürüm etiketiyle release'e ekle.
+Sürüm geçmişi için [değişiklik notlarına](CHANGELOG.md), katkı için [katkı rehberine](CONTRIBUTING.md) bakabilirsin. Yeni sürüm yayımlarken önce `manifest.json` içindeki sürümü ve değişiklik notlarını güncelle; ardından aynı sürüm etiketiyle (örneğin `v1.0`) GitHub release'ini yayımla. [Release iş akışı](.github/workflows/release.yml) etiketteki kodu doğrular, ZIP ve SHA-256 dosyasını üretip yayına otomatik ekler. Etiket ile manifest sürümü uyuşmazsa paketleme durur.
