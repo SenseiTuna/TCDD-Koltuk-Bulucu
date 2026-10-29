@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/SenseiTuna/TCDD-Koltuk-Bulucu/releases/latest"><img src="https://img.shields.io/github/v/release/SenseiTuna/TCDD-Koltuk-Bulucu?style=flat-square&label=s%C3%BCr%C3%BCm&color=17a673" alt="Son sürüm"></a>
+  <a href="https://github.com/SenseiTuna/TCDD-Koltuk-Bulucu/releases/latest"><img src="https://img.shields.io/github/v/release/SenseiTuna/TCDD-Koltuk-Bulucu?style=flat-square&label=s%C3%BCr%C3%BCm&color=17a673&logo=github&cacheSeconds=60" alt="Son sürüm"></a>
   <img src="https://img.shields.io/badge/Manifest-V3-26384a?style=flat-square" alt="Manifest V3">
   <img src="https://img.shields.io/badge/Chrome%20%C2%B7%20Edge%20%C2%B7%20Brave-Chromium-26384a?style=flat-square" alt="Chromium tabanlı tarayıcılar">
 </p>
