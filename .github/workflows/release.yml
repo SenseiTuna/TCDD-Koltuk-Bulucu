@@ -1,0 +1,45 @@
+name: Release extension ZIP
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag (must match manifest version)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.event.release.tag_name || inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.release.tag_name || inputs.tag }}
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      - name: Check release version and JavaScript
+        run: |
+          python -c "import json,os; version=json.load(open('manifest.json'))['version']; assert os.environ['RELEASE_TAG'] == 'v'+version, 'Release tag must match manifest version'"
+          node --check script.js
+      - name: Build and verify extension ZIP
+        run: python tools/package_extension.py
+      - name: Upload ZIP and SHA-256 to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$RELEASE_TAG" dist/TCDD-Koltuk-Bulucu-*.zip dist/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY"
