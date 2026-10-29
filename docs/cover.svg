@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">TCDD Koltuk Bulucu</title>
+  <desc id="desc">Saatini seç, koltuğu takip et. Ekonomi koltuk takibi için bağımsız tarayıcı eklentisi.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102938"/><stop offset="1" stop-color="#071c29"/></linearGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#244352" stroke-width=".6"/></pattern>
+  </defs>
+  <rect width="1280" height="420" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="20" fill="url(#grid)" opacity=".35"/>
+  <path d="M740 420V326Q740 288 778 288H1230" fill="none" stroke="#1b4b51" stroke-width="44"/>
+  <path d="M740 420V326Q740 288 778 288H1230" fill="none" stroke="#2f7777" stroke-width="2" stroke-dasharray="6 12"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="58" y="48" width="265" height="30" rx="15" fill="#214b4b"/>
+    <circle cx="76" cy="63" r="4" fill="#61e2ae"/>
+    <text x="90" y="68" fill="#a6f2d3" font-size="12" font-weight="600" letter-spacing="1.4">BAĞIMSIZ TARAYICI EKLENTİSİ</text>
+    <text x="56" y="154" fill="#f3f7f7" font-size="54" font-weight="700" letter-spacing="-1.5">TCDD Koltuk Bulucu</text>
+    <text x="59" y="202" fill="#90e6c0" font-size="27" font-weight="500">Saatini seç, koltuğu takip et.</text>
+    <text x="59" y="251" fill="#b4c8d2" font-size="18">Ekonomi sınıfındaki boş koltukları takip et.</text>
+    <text x="59" y="278" fill="#b4c8d2" font-size="18">Uygun seferleri görsel ve sesli uyarıyla fark et.</text>
+    <path d="M60 334H635" stroke="#34515e"/>
+    <text x="59" y="368" fill="#95aebc" font-size="14" letter-spacing=".6">CHROME · EDGE · BRAVE</text>
+    <text x="525" y="368" fill="#95aebc" font-size="14">Manifest V3</text>
+    <g transform="translate(810 64)">
+      <rect x="8" y="8" width="346" height="260" rx="18" fill="#04141c" opacity=".5"/>
+      <rect width="346" height="260" rx="18" fill="#f4f8f6"/>
+      <path d="M0 66H346" stroke="#d5e3dc"/>
+      <text x="25" y="40" fill="#233c40" font-size="17" font-weight="700">KOLTUK TAKİBİ</text>
+      <circle cx="306" cy="33" r="6" fill="#19a576"/>
+      <text x="25" y="97" fill="#678179" font-size="11" letter-spacing="1.6">SEÇİLİ SAAT ARALIĞI</text>
+      <text x="25" y="133" fill="#173b3c" font-size="28" font-weight="600">12:00</text>
+      <path d="M120 122H176M169 117L176 122L169 127" fill="none" stroke="#5c7a71" stroke-width="2"/>
+      <text x="195" y="133" fill="#173b3c" font-size="28" font-weight="600">18:00</text>
+      <rect x="23" y="161" width="300" height="71" rx="10" fill="#e3f6eb" stroke="#80cfa6"/>
+      <g transform="translate(43 177)" fill="none" stroke="#168358" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0V24Q0 29 5 29H31M8 0V19H28V35M5 35H31"/></g>
+      <text x="98" y="190" fill="#116240" font-size="13" font-weight="700">EKONOMİ</text>
+      <text x="98" y="213" fill="#356d56" font-size="14">Boş koltukları takip et</text>
+    </g>
+    <text x="982" y="369" fill="#7e9ca9" font-size="12" text-anchor="middle">TCDD ile resmî bağlantısı yoktur.</text>
+  </g>
+</svg>

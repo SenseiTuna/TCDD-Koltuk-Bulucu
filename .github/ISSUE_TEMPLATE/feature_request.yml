@@ -1,0 +1,16 @@
+name: Özellik önerisi
+description: Eklentiyi geliştirmek için bir fikir paylaş.
+title: "[Öneri] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Hangi ihtiyacı karşılamasını istiyorsun?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Önerdiğin çözüm
+    validations:
+      required: true

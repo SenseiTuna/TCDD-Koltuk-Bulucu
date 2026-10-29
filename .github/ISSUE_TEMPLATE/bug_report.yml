@@ -1,0 +1,27 @@
+name: Hata bildirimi
+description: Eklentide karşılaştığın bir sorunu bildir.
+title: "[Hata] "
+body:
+  - type: markdown
+    attributes:
+      value: "Ekran görüntüsü veya günlük paylaşıyorsan kişisel bilgilerini gizle."
+  - type: input
+    id: environment
+    attributes:
+      label: Tarayıcı ve eklenti sürümü
+      placeholder: Chrome, eklenti 1.0
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Sorunu yeniden oluşturma adımları
+      description: Hangi sayfada, hangi işlemin ardından sorun oluştu?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen ve gerçekleşen davranış
+    validations:
+      required: true
